@@ -32,4 +32,21 @@ The `SVC` driven baseline yielded a precision accuracy score of 56%
 weighted avg|0.51|0.56|0.42|3943|
 
 As can be seen below, the `SVC` strategy did not map the actual returns as well than the baseline.
-![SVC Baseline](./Images/tune1_6_mths.png)
+![SVC tuning attempt 1](./Images/tune1_6_mths.png)
+
+## Second tuning attempt - restore training data to 3 months and change the short window to 2
+The `SVC` driven baseline yielded a precision accuracy score of 56%
+
+||precicion|recall|f1-score|support|
+|-|-|-|-|-|
+|-1.0|0.41|0.01|0.03|1804|
+|1.0|0.56|0.99|0.71|2288|
+|accuracy|||0.56|4092|
+|macro avg|0.49|0.50|0.37|4092|
+weighted avg|0.49|0.56|0.41|4092|
+
+As can be seen below, the `SVC` strategy did not map the actual returns as well than the baseline.
+![SVC Tuning attempt 2](./Images/tune2_SMA_2.png)
+
+## Conclusion on baseline vs tuned model
+The tuning of the short SMA window provided a more accurate prediction.
