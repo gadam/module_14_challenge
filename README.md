@@ -19,3 +19,17 @@ weighted avg|0.50|0.55|0.43|4092|
 
 As can be seen below, the `SVC` strategy mapped the actual returns fairly closely.
 ![SVC Baseline](./Images/baseline.png)
+
+## First tuning attempt - using 6 months training data
+The `SVC` driven baseline yielded a precision accuracy score of 56%
+
+||precicion|recall|f1-score|support|
+|-|-|-|-|-|
+|-1.0|0.44|0.02|0.04|1732|
+|1.0|0.56|0.98|0.71|2211|
+|accuracy|||0.56|3943|
+|macro avg|0.50|0.50|0.38|3943|
+weighted avg|0.51|0.56|0.42|3943|
+
+As can be seen below, the `SVC` strategy did not map the actual returns as well than the baseline.
+![SVC Baseline](./Images/tune1_6_mths.png)
