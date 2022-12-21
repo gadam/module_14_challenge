@@ -50,3 +50,16 @@ As can be seen below, the `SVC` strategy did not map the actual returns as well 
 
 ## Conclusion on baseline vs tuned model
 The tuning of the short SMA window provided a more accurate prediction.
+
+## Comparing to `Logistic Regression` classification model
+Using the `Logistic Regression` model, the bot yielded a precision accuracy score of 52% and the performance did not match that of the `short-window` tuned `SVC` model and is therefore not as sufficiently accurate to be useful.
+
+||precicion|recall|f1-score|support|
+|-|-|-|-|-|
+|-1.0|0.44|0.34|0.38|1804|
+|1.0|0.56|0.66|0.60|2288|
+|accuracy|||0.52|4092|
+|macro avg|0.50|0.50|0.49|4092|
+weighted avg|0.51|0.52|0.51|4092|
+
+![Logistic Regression](./Images/logistic_regression.png)
